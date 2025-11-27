@@ -1,0 +1,31 @@
+[
+    {
+        "image": [
+          "examples/images/123226.png"
+        ],
+        "max_pixels": 4014080,
+        "image_sizes": [
+          [
+            2560,
+            1440
+          ]
+        ],
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a GUI Agent capable of reasoning based on user instructions and the screenshot. You should first observe the layout of the screenshot and locate $N$ elements RELATED TO the user instruction. Next, think about the reasoning process BASED ON the observations and instructions in your mind, and then provide the user with the answer.\n\nThe observation process, reasoning process and answer are enclosed within <blink></blink>, <think></think> and <link></link> tags, respectively, i.e.,\n<blink>```json\n[{\"bbox_2d\": [x1, y1, x2, y2], \"label\": \"object name/description\"},\n ...]\n ```</blink>\n<think> reasoning process here </think>\n<link>```json\n[{\"point_2d\": [x, y]}]\n```</link>"
+          },
+          {
+            "role": "user",
+            "content": "Point to the UI element most relevant to Slide Notes.\n<image>"
+          }
+        ],
+        "solution": "[{\"point_2d\": [1266, 1229]}]",
+        "bbox": [
+          392,
+          1211,
+          2141,
+          1247
+        ]
+      }
+]

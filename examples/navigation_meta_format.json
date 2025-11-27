@@ -1,0 +1,31 @@
+[
+    {
+        "images": [
+          "examples/images/8418572386209486_10.png"
+        ],
+        "image_sizes": [
+          [
+            720,
+            1280
+          ]
+        ],
+        "max_pixels": 4014080,
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a GUI Agent capable of reasoning based on user instructions, action history, and the current screenshot. You should first observe the layout of the screenshot and locate $N$ elements RELATED TO the user instruction. Next, think about the reasoning process BASED ON the observations and instructions in your mind, and then provide the user with the answer.\n\nThe observation process (can be None if $N$ == 0), reasoning process and answer are enclosed within <blink></blink>, <think></think> and <link></link> tags, respectively, i.e.,\n<blink>```json\n[{\"bbox_2d\": [x1, y1, x2, y2], \"label\": \"object name/description\"},\n ...]\n ```</blink>\n<think> reasoning process here </think>\n<link>```json\n[{\"Plan\": \"action description\", \"Action\": {\"function\": \"...\", \"...\": \"...\"}}]\n```</link>"
+          },
+          {
+            "role": "user",
+            "content": "You are given a task and your action history, with screenshots. You need to perform the next action to complete the task.\n\n## Action Space\nAction 1: Tap\n- format: {'function': 'Tap', 'point_2d':[x, y]}\n- purpose: tap the specified position.\nAction 2: Type\n - format: {'function': 'Type', 'text':'text_to_input'}\n - purpose: input specified text.\nAction 3: Swipe\n - format: {'function': 'Swipe', 'direction': 'up/down/right/left'}\n - purpose: swipe on the screen.\nAction 4: Back\n - format: {'function': 'Back'}\n - purpose: return to the previous screen.\nAction 5: Home\n - format: {'function': 'Home'}\n - purpose: navigate to the home screen.\nAction 6: LongPress\n - format: {'function': 'LongPress', 'point_2d':[x,y]}\n - purpose: longpress the specified position.\n\n## User Instruction\nExplore a new hiking trail using Mapillary, check the weekend's weather forecast with Weather & Radar, and then invite katsunaksu to join through Tumblr.\n\n## Action History\nStep 1: Tap on the Mapillary app to start exploring hiking trails.\nStep 2: Click on the 'Start capturing' button to proceed.\nStep 3: Click on the search bar to enter a location for the hiking trail.\nStep 4: Type 'hiking trail' into the search bar.\nStep 5: Click on 'Mt Hollywood Hiking Trl, Los Angeles, CA 90027, United States' to explore that trail.\nStep 6: Tap the home icon to exit the trail view and return to the main menu.\nStep 7: Tap on the Weather & Radar app icon to open it and check the weather forecast.\nStep 8: Click on the search icon to change the location for the weather forecast to Los Angeles.\nStep 9: Tap on the search bar next to the magnifying glass icon to enter 'Los Angeles' as the new location.\nStep 10: Type 'Los Angeles' in the search bar to change the location for the weather forecast.\n\n## Screenshots\n<image>"
+          }
+        ],
+        "solution": "[{\"Action\": {\"function\": \"Tap\", \"point_2d\": [663, 1135]}}]",
+        "bbox": [
+          614,
+          1094,
+          720,
+          1182
+        ]
+      }
+]

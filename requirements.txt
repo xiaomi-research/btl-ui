@@ -1,0 +1,30 @@
+# Core ML/DL frameworks
+torch>=2.0.0
+accelerate>=1.0.0
+transformers>=4.20.0
+
+# Swift framework for RLHF
+modelscope>=1.20.0
+
+# Qwen vision utilities
+qwen-vl-utils>=0.0.10
+
+# DeepSpeed for distributed training
+deepspeed>=0.12.0
+
+# vLLM for inference
+vllm>=0.6.0
+
+# Required for GPU operations
+flash-attn>=2.0.0
+xformers>=0.0.20
+
+# Dependencies for RLHF training
+datasets>=2.0.0
+peft>=0.10.0
+trl>=0.7.0
+
+# Utilities
+safetensors>=0.4.0
+tokenizers>=0.13.0
+pillow>=10.0.0
