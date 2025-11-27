@@ -73,7 +73,7 @@ Please consider citing this work if you find it helpful.
 ```bib
 @article{zhang2025btl,
   title={Btl-ui: Blink-think-link reasoning model for gui agent},
-  author={Zhang Shaojie, and Zhang Ruoceng, and Fu Pei, and Wang Shaokang, and Yang Jiahui, and Du Xin, and Cui Shiqi, and Qin Bin, and Huang Ying, and Luo Zhenbo, and Jian Luan},
+  author={Zhang, Shaojie and Zhang, Ruoceng and Fu, Pei and Wang, Shaokang and Yang, Jiahui and Du, Xin and Cui, Shiqi and Qin, Bin and Huang, Ying and Luo, Zhenbo and others},
   journal={arXiv preprint arXiv:2509.15566},
   year={2025}
 }
